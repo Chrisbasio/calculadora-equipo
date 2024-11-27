@@ -34,8 +34,10 @@ int main() {
                 break;
 
             case 2: // Resta
-                cout << "Ingrese dos números: ";
-                cin >> num1 >> num2;
+                cout << "Ingrese un numero: ";
+                cin >> num1;
+                cout << "Ingrese otro numero: ";
+                cin >> num2;
                 resultado = num1 - num2;
                 cout << "El resultado es: " << resultado << endl;
                 break;

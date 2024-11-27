@@ -47,17 +47,20 @@ int main() {
                 cout << "El resultado es: " << resultado << endl;
                 break;
                 
-
-            case 3: // Multiplicación
-                cout << "Ingrese dos números: ";
-                cin >> num1 >> num2;
+ case 3: // Multiplicacion
+                cout << "Ingrese un numero: ";
+                cin >> num1;
+                cout << "Ingrese otro numero: ";
+                cin >> num2;
                 resultado = num1 * num2;
                 cout << "El resultado es: " << resultado << endl;
                 break;
 
-            case 4: // División
-                cout << "Ingrese dos números: ";
-                cin >> num1 >> num2;
+            case 4: // Division
+                cout << "Ingrese un numero: ";
+                cin >> num1;
+                cout << "Ingrese otro numero: ";
+                cin >> num2;
                 if (num2 != 0) {
                     resultado = num1 / num2;
                     cout << "El resultado es: " << resultado << endl;

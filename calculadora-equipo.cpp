@@ -1,20 +1,19 @@
 #include <iostream>
 #include <cmath> // Para funciones matemáticas como sqrt() y pow()
 
-
 using namespace std;
 
 void mostrarMenu() {
-    cout << "**** MENÚ ****" << endl;
+    cout << "** MENU **" << endl;
     cout << "1. Suma" << endl;
     cout << "2. Resta" << endl;
-    cout << "3. Multiplicación" << endl;
-    cout << "4. División" << endl;
-    cout << "5. Raíz cuadrada" << endl;
+    cout << "3. Multiplicacion" << endl;
+    cout << "4. Division" << endl;
+    cout << "5. Raiz cuadrada" << endl;
     cout << "6. Potencia" << endl;
     cout << "7. Salir" << endl;
-    cout << "*********" << endl;
-    cout << "Seleccione una opción: ";
+    cout << "******" << endl;
+    cout << "Seleccione una opcion: ";
 }
 
 int main() {
@@ -25,6 +24,13 @@ int main() {
         mostrarMenu();
         cin >> opcion;
 
+        if (cin.fail()) {
+            cin.clear();
+            cin.ignore(1000, '\n');
+            cout << "Por favor, ingrese un numero valido." << endl;
+            continue;
+        }
+       
         switch (opcion) {
             case 1: // Suma
                 cout << "Ingrese dos números: ";

@@ -41,6 +41,7 @@ int main() {
                 resultado = num1 - num2;
                 cout << "El resultado es: " << resultado << endl;
                 break;
+                
 
             case 3: // Multiplicación
                 cout << "Ingrese dos números: ";

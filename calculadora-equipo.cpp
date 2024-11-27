@@ -1,6 +1,5 @@
 #include <iostream>
-#include <cmath> // Para funciones matemáticas como sqrt() y pow()
-
+#include <cmath> 
 using namespace std;
 
 void mostrarMenu() {
